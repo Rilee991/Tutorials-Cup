@@ -1,0 +1,15 @@
+int main(){
+	int n,i,x;
+	s2(n,x);
+	VLL arr(n);
+	arr = inpA(n);
+	ll js = INT_MIN, jg = INT_MAX;
+	For1(i,0,n){
+		if(arr[i]<x && arr[i]>js)
+			js = arr[i];
+		else if(arr[i]>x && arr[i]<jg)
+			jg = arr[i];
+	}
+	pf(js)<<" "<<jg;
+	return 0;
+}
