@@ -1,0 +1,18 @@
+int main(){
+    int n,i,sum;
+    cin>>n>>sum;
+    VLL arr(n);
+    arr = inpA(n);
+    SortV(arr);
+    ll start = 0,end = n-1;
+    ll ans = 0;
+    while(start<=end){
+        if(arr[start]+arr[end]==sum)
+            ans++;
+        else if(arr[start]+arr[end]<sum)
+            start++;
+        else
+            end--;
+    }
+    pf(ans);
+}
