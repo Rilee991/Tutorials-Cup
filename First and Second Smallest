@@ -1,0 +1,22 @@
+int main(){
+	int n,x,i,f,s;
+	s1(n);
+	VLL arr(n);
+	arr = inpA(n);
+	if(arr[0]<arr[1]){
+		f = arr[0];
+		s = arr[1];
+	}else{
+		f = arr[1];
+		s = arr[0];
+	}
+	For1(i,2,n){
+		if(arr[i]<f){
+			s = f;
+			f = arr[i];
+		}else if(arr[i]<s)
+			s = arr[i];
+	}
+	pf(f)<<" "<<s;
+	return 0;
+}
