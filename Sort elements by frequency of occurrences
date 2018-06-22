@@ -1,0 +1,19 @@
+int main(){
+	int n,x,i;
+	s1(n);
+	MLLLL mp;
+	MLLLL::iterator it;
+	multimap<ll,ll> freq;
+	multimap<ll,ll>::iterator itt;
+	For1(i,0,n){
+		s1(x);
+		mp[x]++;
+	}
+	ForMap(it,mp){
+		freq.insert(multimap<ll,ll>::value_type(it->S,it->F));
+	}
+	ForMap(itt,freq){
+		pf(itt->S)<<" ";
+	}
+	return 0;
+}
