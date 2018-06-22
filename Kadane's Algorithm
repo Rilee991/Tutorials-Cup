@@ -1,0 +1,16 @@
+int main(){
+	int n,i;
+	s1(n);
+	VLL arr(n);
+	arr = inpA(n);
+	ll curr = arr[0];
+	ll ans = arr[0];
+	//pfs("Initial:");pf(curr)<<" "<<ans<<nl;
+	For1(i,1,n){
+		curr = max(arr[i],curr+arr[i]);
+		ans = max(ans,curr);
+		//pf(curr)<<" "<<ans<<nl;
+	}
+	pf(ans);
+	return 0;
+}
