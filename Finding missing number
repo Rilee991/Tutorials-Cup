@@ -1,0 +1,12 @@
+int main(){
+	int n,i;
+	s1(n);
+	VLL arr(n);
+	arr = inpA(n);
+	ll sum = ((n+1)*(n+2))/2;
+	For1(i,0,n){
+		sum -= arr[i];
+	}
+	pf(sum);
+	return 0;
+}
